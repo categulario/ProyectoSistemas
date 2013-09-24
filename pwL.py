@@ -6,7 +6,7 @@ def diff (x):
      If X is a vector of length N, `diff (X)' is the vector of first
      differences  X(2) - X(1), ..., X(n) - X(n-1).
      """
-     return array([x[n]-x[n-1] for n in xrange(2, len(x))])
+     return array([x[n]-x[n-1] for n in xrange(1, len(x))])
 
 
 def pwL(x,y):
@@ -20,6 +20,6 @@ def pwL(x,y):
      % line L(z) = a(i) + b(i)z passes though the points (x(i),y(i)) and (x(i+1),y(i+1)).
      '''
      n = len(x)
-     a = y[:n-2]
+     a = y[:n-1]
      b = diff(y) / diff(x)
      return a, b

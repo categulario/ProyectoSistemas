@@ -15,8 +15,9 @@ def pwLEval(a,b,x,zVals):
 
     m = len(zVals)
     LVals = zeros(m)
-    g = 1
+    g = 0
     for j in range(m):
         i = Locate(x, zVals[j], g)
         LVals[j] = a[i] + b[i]*(zVals[j]-x[i])
         g = i
+    return LVals
