@@ -7,7 +7,8 @@ import time
 x=linspace(-1,1,100)
 y=1.0/(1.0+25*(x**2))
 
-def update_line()
+def update_line(num, data, l1, l2, l3):
+    pass
 
 #for i in range(7,16,2):
 fig = plt.figure()
