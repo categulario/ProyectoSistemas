@@ -1,11 +1,14 @@
+# -*- coding:utf-8 -*-
+
 '''% Script File: ShowPWL1
 % Convergence of the piecewise linear interpolant to
 % humps(x) on [0,3]
 '''
 from numpy import linspace
 from pwLEval import*
-from pylab import *
+from pylab import plot, figure
 from pwL import *
+
 def humps(x):
      y=(1.0/((x-.3)**2)+.01)+((1.0/(  ((x-.9)**2) +.04)))-6
      return y
