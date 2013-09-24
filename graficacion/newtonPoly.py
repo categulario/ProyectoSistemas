@@ -10,7 +10,7 @@
 def evalPoly(a,xData,x):
     n = len(xData) - 1 # Degree of polynomial
     p = a[n]
-    for k in range(1,n+1):
+    for k in range(n+1):
         p = a[n-k] + (x -xData[n-k])*p
     return p
 
